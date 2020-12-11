@@ -1,4 +1,4 @@
-# TP3 - François BONNIN & Rémi Falcati
+# TP CRUD en JS - REST
 
 * **Lister les matchs** : La fonction fonctionne parfaitement, juste la Snackbar s'affiche 2 fois.
 L'équipe vainqueur se trouve dans la case bleu.
