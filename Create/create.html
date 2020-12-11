@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Create</title>
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img src="../ball.png" class="navbar-brand" width=30px href="#">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="../index.html"> Matchs <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#"> Create </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <h1 class='text'> Add Matchs :</h1>
+    <form>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control mb-4 mr-sm-4" name="homeTeam" id="homeTeam" placeholder="Home Team">
+        </div>
+        <div class="col">
+          <input type="number" class="form-control mb-2 mr-sm-2" name="homeScore" id="homeScore"
+            placeholder="Home Score">
+        </div>
+      </div>
+    </form>
+
+    <form>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control mb-2 mr-sm-2" name="visitorTeam" id="visitorTeam"
+            placeholder="Visitor Team">
+        </div>
+        <div class="col">
+          <input type="number" class="form-control mb-2 mr-sm-2" name="visitorScore" id="visitorScore"
+            placeholder="Visitor Score">
+        </div>
+      </div>
+    </form>
+
+    <form id="dateform">
+      <input type="date" class="form-control mb-2 mr-sm-2" id="date">
+      <button class='btn btn-primary mb-2' id="btnCreate" name="btnCreate" type="submit">Add</button>
+    </form>
+  </main>
+  <div id="snackbar"></div>
+</body>
+
+<script src="../Request/fileMatch.js"></script>
+<script src="../Request/http-service.js"></script>
+<script src="../Request/fetch.js"></script>
+<script src="../index.js"></script>
+<script src="create.js"></script>
+
+</html>
